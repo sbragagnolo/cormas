@@ -158,8 +158,6 @@ ConfigurationOfCormas >> baseline010: spec [
 		spec postLoadDoIt: #postLoad.
 		spec repository: 'http://ss3.gemtalksystems.com/ss/Cormas'.
 		spec 
-			baseline: 'ClassEditor' 
-			with: [ spec repository: 'github://openponk/class-editor/repository' ];
 			baseline: 'FileDialog'
 			with: [ spec repository: 'github://peteruhnak/file-dialog/repository' ];
 			project: 'CodeGenerator' with: [
@@ -198,7 +196,7 @@ ConfigurationOfCormas >> baseline010: spec [
 				spec requires: #('FileDialog' 'ProjectFramework' 'CodeGenerator' 'Roassal2' ). ];
 			package: #'Cormas-VW-Ported'.
 		spec 
-			group: 'All' with: #(#'Cormas-VW-Ported' 'Cormas-UI' 'Cormas-Tests' 'Cormas-Model-FireAutomata' 'Cormas-Model-ECEC' 'Cormas-Model-Conway' 'Cormas-Core' 'ClassEditor' 'Cormas-Model-Diffuse');
+			group: 'All' with: #(#'Cormas-VW-Ported' 'Cormas-UI' 'Cormas-Tests' 'Cormas-Model-FireAutomata' 'Cormas-Model-ECEC' 'Cormas-Model-Conway' 'Cormas-Core'  'Cormas-Model-Diffuse');
 			group: 'Core' with: #('Cormas-Core' );
 			group: 'Models' with: #('Cormas-Model-Conway' 'Cormas-Core' 'Cormas-Model-ECEC' 'Cormas-Model-FireAutomata' 'Cormas-Model-Diffuse' );
 			group: 'Tests' with: #('Cormas-Core' 'Cormas-Tests' );
@@ -216,8 +214,7 @@ ConfigurationOfCormas >> baseline012: spec [
 		spec postLoadDoIt: #postLoad.		
 		spec repository: 'http://ss3.gemtalksystems.com/ss/Cormas'.
  		spec 
-			baseline: 'ClassEditor' 
-			with: [ spec repository: 'github://openponk/class-editor/repository' ];
+
 			baseline: 'FileDialog'
 			with: [ spec repository: 'github://peteruhnak/file-dialog/repository' ];
 			baseline: 'ProjectFramework' 
@@ -249,7 +246,7 @@ ConfigurationOfCormas >> baseline012: spec [
 				spec requires: #('FileDialog' 'ProjectFramework' 'CodeGenerator' 'Roassal2' ). ];
 			package: #'Cormas-VW-Ported'.
 		spec 
-			group: 'All' with: #(#'Cormas-VW-Ported' 'Cormas-UI' 'Cormas-Tests' 'Cormas-Model-FireAutomata' 'Cormas-Model-ECEC' 'Cormas-Model-Conway' 'Cormas-Core' 'ClassEditor' 'Cormas-Model-Diffuse' #'Cormas-Model-DemoAggregates' );
+			group: 'All' with: #(#'Cormas-VW-Ported' 'Cormas-UI' 'Cormas-Tests' 'Cormas-Model-FireAutomata' 'Cormas-Model-ECEC' 'Cormas-Model-Conway' 'Cormas-Core' 'Cormas-Model-Diffuse' #'Cormas-Model-DemoAggregates' );
 			group: 'Core' with: #('Cormas-Core' );
 			group: 'Models' with: #('Cormas-Model-Conway' 'Cormas-Core' 'Cormas-Model-ECEC' 'Cormas-Model-FireAutomata' 'Cormas-Model-Diffuse' #'Cormas-Model-DemoAggregates' );
 			group: 'Tests' with: #('Cormas-Core' 'Cormas-Tests' );
@@ -267,8 +264,6 @@ ConfigurationOfCormas >> baseline013: spec [
 		spec postLoadDoIt: #postLoad.		
 		spec repository: 'http://ss3.gemtalksystems.com/ss/Cormas'.
  		spec 
-			baseline: 'ClassEditor' 
-			with: [ spec repository: 'github://openponk/class-editor/repository' ];
 			baseline: 'FileDialog'
 			with: [ spec repository: 'github://peteruhnak/file-dialog/repository' ];
 			baseline: 'ProjectFramework' 
@@ -305,7 +300,7 @@ ConfigurationOfCormas >> baseline013: spec [
 				spec requires: #('FileDialog' 'ProjectFramework' 'CodeGenerator' 'Roassal2' ). ];
 			package: #'Cormas-VW-Ported'.
 		spec 
-			group: 'All' with: #(#'Cormas-VW-Ported' 'Cormas-UI' 'Cormas-Tests' 'Cormas-Model-FireAutomata' 'Cormas-Model-ECEC' 'Cormas-Model-Conway' 'Cormas-Core' 'ClassEditor' 'Cormas-Model-Diffuse' #'Cormas-Model-DemoAggregates' 'Cormas-OpenMole');
+			group: 'All' with: #(#'Cormas-VW-Ported' 'Cormas-UI' 'Cormas-Tests' 'Cormas-Model-FireAutomata' 'Cormas-Model-ECEC' 'Cormas-Model-Conway' 'Cormas-Core' 'Cormas-Model-Diffuse' #'Cormas-Model-DemoAggregates' 'Cormas-OpenMole');
 			group: 'Core' with: #('Cormas-Core' );
 			group: 'Models' with: #('Cormas-Model-Conway' 'Cormas-Core' 'Cormas-Model-ECEC' 'Cormas-Model-FireAutomata' 'Cormas-Model-Diffuse' #'Cormas-Model-DemoAggregates' );
 			group: 'Tests' with: #('Cormas-Core' 'Cormas-Tests' );
@@ -466,9 +461,7 @@ ConfigurationOfCormas >> version030: spec [
 		spec description: 'version 0.30'.
 		spec author: 'SergeStinckwich'.
 		spec timestamp: '1/9/2018 09:50'.
-		spec 
-			baseline: 'ClassEditor' ;
-			baseline: 'FileDialog' ;
+		spec baseline: 'FileDialog' ;
 			project: 'CodeGenerator' with: '1.3';
 			project: 'ProjectFramework' with: '1.2';
 			project: 'Roassal2' with: '1.55';
@@ -496,7 +489,6 @@ ConfigurationOfCormas >> version031: spec [
 		spec author: 'SergeStinckwich'.
 		spec timestamp: '3:46:00.479129 pm'.
 		spec 
-			baseline: 'ClassEditor' ;
 			baseline: 'FileDialog' ;
 			project: 'CodeGenerator' with: '1.3';
 			project: 'ProjectFramework' with: '1.2';
